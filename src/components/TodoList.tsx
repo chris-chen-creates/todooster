@@ -1,18 +1,18 @@
-import React from 'react';
-import Todo from './Todo';
-import TodoEdit from './TodoEdit';
-import TodoDelete from './TodoDelete';
+import React from 'react'
+import Todo from './Todo'
+import TodoDelete from './TodoDelete'
+import TodoAdd from './TodoAdd'
 
 const TodoList = () => {
   return (
     <div>
-      <TodoEdit />
+      <TodoAdd />
       <Todo />
       <Todo />
       <Todo />
       <TodoDelete />
     </div>
-  );
-};
+  )
+}
 
-export default TodoList;
+export default TodoList

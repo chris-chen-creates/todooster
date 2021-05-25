@@ -1,12 +1,13 @@
-import { Button } from '@material-ui/core';
-import React from 'react';
+import React from 'react'
+import { BsPlusSquareFill } from 'react-icons/bs'
 
 const TodoAdd = () => {
   return (
-    <Button variant='contained' color='primary'>
-      Add Task
-    </Button>
-  );
-};
+    <div>
+      <input className='m-4 bg-gray-600 rounded-md text-3xl'></input>
+      <BsPlusSquareFill className='inline-block align-text-bottom text-3xl text-blue-400 hover:text-red-200' />
+    </div>
+  )
+}
 
-export default TodoAdd;
+export default TodoAdd

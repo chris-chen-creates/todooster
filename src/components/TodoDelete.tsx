@@ -1,12 +1,11 @@
-import React from 'react';
-import Button from '@material-ui/core/Button';
+import React from 'react'
 
 const TodoDelete = () => {
   return (
-    <Button variant='contained' color='primary'>
-      Delete Finished Tasks
-    </Button>
-  );
-};
+    <button className='bg-blue-600 m-3 p-4 text-2xl rounded-lg font-semibold hover:bg-pink-200 hover:text-black'>
+      Delete completed
+    </button>
+  )
+}
 
-export default TodoDelete;
+export default TodoDelete
