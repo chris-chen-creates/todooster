@@ -1,46 +1,35 @@
-# Getting Started with Create React App
+# Todooster
+![Alt Text](https://media.giphy.com/media/C3Wwc75PYIi6psYbPO/giphy.gif)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What is it?
+Todooster is a simple fullstack todo app
 
-## Available Scripts
+## What's the user experience?
+Todooster is designed to be a simple todo app that allows a user to jot down tasks to complete and remove them when completed.
 
-In the project directory, you can run:
+## Functionality for user
+- Add new tasks to the list
+- Cross off completed tasks
+- Delete completed tasks
+- Login and have the state for the list be saved
 
-### `yarn start`
+## What technologies are being used?
+- [Node.js](https://nodejs.org/en/) v12.18.3
+- [npm](https://www.npmjs.com/) v7.18.1
+- [React w/ Typescript](https://create-react-app.dev/)
+- [Tailwind CSS w/ Craco](https://tailwindcss.com/)
+- [Jest](https://jestjs.io/) (for testing)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [MySQL](https://www.mysql.com/) database
+- [Goose](https://github.com/pressly/goose) for migrations
+- [Express](https://expressjs.com/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Setup
+1. Download the .zip file or clone the repo using the command line tool:
+```
+gh repo clone chris-chen-creates/todooster
+```
+2. Install the dependencies using:
+```
+npm install
+```

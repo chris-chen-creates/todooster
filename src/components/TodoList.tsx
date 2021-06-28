@@ -1,49 +1,27 @@
-import { ChangeEvent, useState } from 'react'
-import Todo from './Todo'
-import TodoDelete from './TodoDelete'
-import TodoAdd from './TodoAdd'
+import { TodoListProps } from '../interface';
+import Todo from './Todo';
 
-interface Todos {
-  id: number
-  task: string
-  isCompleted: boolean
-}
-
-const TodoList = () => {
-  const [todos, setTodo] = useState([
-    {
-      id: 0,
-      task: 'this is a task',
-      isComplete: false,
-    },
-  ])
-
-  let id = 0
-  const [task, setTask] = useState('')
-
-  const handleAddTodo = (todo: Todos) => {
-    const updatedTodos = [...todos, todo]
-  }
-
-  const handleChange = (e: ChangeEvent) => {
-    const { value } = e.target as HTMLInputElement
-    setTask(value)
-  }
-
+const TodoList = (props: TodoListProps) => {
   return (
     <div>
-      <TodoAdd task={task} />
-      {todos.map(({ id, task, isComplete }) => (
-        <Todo
-          id={id}
-          task={task}
-          isComplete={isComplete}
-          onComplete={() => {}}
-        />
-      ))}
-      <TodoDelete />
+      <ul>
+        {props.todos.map((todo) => (
+          <li key={todo.id}>
+            <Todo
+              todo={todo}
+              handleTaskDelete={props.handleTaskDelete}
+              handleTaskComplete={props.handleTaskComplete}
+            />
+          </li>
+        ))}
+      </ul>
+      <button
+        className='bg-blue-600 m-3 p-4 text-2xl rounded-lg font-semibold hover:bg-pink-200 hover:text-black'
+        onClick={() => props.handleTaskDelete(props.todos)}
+      >
+        Delete Completed
+      </button>
     </div>
-  )
-}
-
-export default TodoList
+  );
+};
+export default TodoList;
