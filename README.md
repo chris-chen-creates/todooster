@@ -45,7 +45,7 @@ npm install
 
 # Design Notes :chicken:
 
-### Register
+## Register
 **Frontend**
 
 When the user first enters the app, they are greeted with a login window. Below the login window is an option to register if they're not currently a user of the app.
@@ -56,7 +56,7 @@ When the register option is pressed, they move to another window that will allow
 
 When the user submits their newly created username and password, the information will be passed through the server and into the Todooster database. The username and password will be stored in the user table and the password is hashed before being stored to reinforce security. After the info is stored, a session token will be passed back to the user.
 
-### Login
+## Login
 **Frontend**
 
 When the user enters the app, they're greeted with a login window. If they're already a user, they can enter their username and password. If the credentials are valid, they'll enter the app. If the credentials are invalid, they'll be greeted with a helpful error message. 
@@ -67,7 +67,7 @@ Once logged in, the user will see the task list in the same state that they last
 
 When the user logs in, the entered information will be compared to what is within the database. The password will be hashed to make the comparison. If the information passes, the server will pass back a session token. If the info fails, they'll be passed a 4xx error.
 
-### Creating a task
+## Creating a task
 **Frontend**
 
 The user can type a task into the input box and either press enter or press the + icon to the right of the input box. The task will then be added to their task list. 
@@ -76,7 +76,7 @@ The user can type a task into the input box and either press enter or press the 
 
 When the task is created, the task will be passed to through the server to the database. A timestamp for the creation will be added to the database as well.
 
-### Completing a task
+## Completing a task
 **Frontend**
 
 After a user completes their task, they can press the circle icon to the left of the task. This will change the icon to a filled in (or completed) icon signifying they completed the task (yay!)
@@ -85,7 +85,7 @@ After a user completes their task, they can press the circle icon to the left of
 
 When a task is marked as complete, a timestamp will be added to the `is_complete` field for the task within the database. If a task is changed from completed to incomplete, the timestamp for `is_complete` will be deleted until the task is completed again.
 
-### Deleting completed tasks
+## Deleting completed tasks
 **Frontend**
 
 After a user has marked a task as complete, it'll then be eligible for deletion. When the "Delete Completed" button is pressed, the completed tasks will be removed.
