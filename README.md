@@ -94,7 +94,7 @@ After a user has marked a task as complete, it'll then be eligible for deletion.
 
 Deleting tasks will add a timestamp to the deleted field on the associated task in the database. These tasks will no longer be available to the user. 
 
-## Backend Design
+# Backend Design
 
 ### ERD
 ![Imgur](https://i.imgur.com/5Xpi8hu.png)
