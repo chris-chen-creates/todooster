@@ -98,4 +98,5 @@ Deleting tasks will add a timestamp to the deleted field on the associated task 
 
 ### ERD
 ![Imgur](https://i.imgur.com/5Xpi8hu.png)
-![Imgur](https://i.imgur.com/Ah30sap.png)
+![Imgur](https://i.imgur.com/uwCgnVv.png)
+![Imgur](https://i.imgur.com/KskpYDg.png)
