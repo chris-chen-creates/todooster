@@ -3,9 +3,9 @@
 # dependencies
 /node_modules
 /.pnp
-.pnp.js
-/todooster-db.session.sql
 /.vscode
+.pnp.js
+
 
 # testing
 /coverage
