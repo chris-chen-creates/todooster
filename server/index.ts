@@ -11,7 +11,7 @@ import HealthRouter from './api/health/router';
 
 const app = express();
 
-const BASE_PATH = '/api/v1';
+const BASE_PATH = '/api';
 
 async function main() {
   const config = Config.readFromEnvironment();
