@@ -5,11 +5,12 @@ const md5 = require('md5')
 
 export default class UserDAO {
   constructor(private db: Connection) {}
+
   public async createUser(username: string, password: string): Promise<number> {
     let hash = md5(password)
     const user = (await this.db.execute(
       'INSERT INTO Users(username, password_hash) VALUES (?, ?)',
-      [username, password]
+      [username, hash]
     )) as any
     return await lastInsertId(this.db)
   }
@@ -25,5 +26,25 @@ export default class UserDAO {
       .query('SELECT session_token FROM Sessions WHERE id = ?', [sessionId])
     const rows = toObj((result as unknown as any)[0]) as any
     return rows[0].session_token
+  }
+
+  public async loginUser(
+    username: string,
+    password: string
+  ): Promise<number | undefined> {
+    let hash = md5(password)
+    let verifyUser = (
+      await this.db
+        .promise()
+        .query(
+          `SELECT id, username, password_hash FROM Users WHERE username = ? AND password_hash = ?`,
+          [username, hash]
+        )
+    )[0]
+    let checkUser = toObj(verifyUser)
+    if (checkUser.length === 0) {
+      return undefined
+    }
+    return checkUser[0].id
   }
 }
