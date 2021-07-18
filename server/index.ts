@@ -4,10 +4,10 @@ import mysql from 'mysql2'
 import Config from './config'
 import logMiddleware from './middleware/logger'
 import errMiddleware from './middleware/errors'
-// import { UserRouter } from './api/users/router';
 
 import HealthRouter from './api/health/router'
 
+import { taskMasterRouter } from './api/tasks/router'
 import { createUserRouter } from './api/users/router'
 
 const app = express()
@@ -18,12 +18,16 @@ async function main() {
   const config = Config.readFromEnvironment()
   const db = mysql.createConnection(config.dbOptions())
   const healthRouter = new HealthRouter(db)
+  const taskRouter = taskMasterRouter(db)
+  const userRouter = createUserRouter(db)
 
   app.use(express.json())
   app.use(logMiddleware)
 
   app.use(BASE_PATH, healthRouter.routes())
-  app.use(BASE_PATH, createUserRouter(db).routes())
+  app.use(BASE_PATH, taskRouter.routes())
+  app.use(BASE_PATH, userRouter.routes())
+  app.use(errMiddleware)
 
   await app
     .listen(config.port, () => {
