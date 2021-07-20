@@ -50,7 +50,7 @@
     semver "^5.4.1"
     source-map "^0.5.0"
 
-"@babel/core@^7.1.0", "@babel/core@^7.12.3", "@babel/core@^7.7.5", "@babel/core@^7.8.4":
+"@babel/core@^7.1.0", "@babel/core@^7.12.3", "@babel/core@^7.6.0", "@babel/core@^7.7.5", "@babel/core@^7.8.4":
   version "7.14.6"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@babel/core/-/core-7.14.6.tgz#e0814ec1a950032ff16c13a2721de39a8416fcab"
   integrity sha1-4IFOwalQAy/xbBOich3jmoQW/Ks=
@@ -923,7 +923,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
 
-"@babel/plugin-transform-typescript@^7.12.1":
+"@babel/plugin-transform-typescript@^7.12.1", "@babel/plugin-transform-typescript@^7.14.5":
   version "7.14.6"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.14.6.tgz#6e9c2d98da2507ebe0a883b100cde3c7279df36c"
   integrity sha1-bpwtmNolB+vgqIOxAM3jxyed82w=
@@ -1142,6 +1142,15 @@
     "@babel/helper-plugin-utils" "^7.10.4"
     "@babel/plugin-transform-typescript" "^7.12.1"
 
+"@babel/preset-typescript@^7.14.5":
+  version "7.14.5"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@babel/preset-typescript/-/preset-typescript-7.14.5.tgz#aa98de119cf9852b79511f19e7f44a2d379bcce0"
+  integrity sha1-qpjeEZz5hSt5UR8Z5/RKLTebzOA=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.14.5"
+    "@babel/helper-validator-option" "^7.14.5"
+    "@babel/plugin-transform-typescript" "^7.14.5"
+
 "@babel/runtime-corejs3@^7.10.2":
   version "7.14.7"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@babel/runtime-corejs3/-/runtime-corejs3-7.14.7.tgz#0ef292bbce40ca00f874c9724ef175a12476465c"
@@ -1209,7 +1218,16 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@craco/craco@^6.1.2":
+"@craco/craco@^5.5.0":
+  version "5.9.0"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@craco/craco/-/craco-5.9.0.tgz#dcd34330b558596a4841374743071b7fa041dce9"
+  integrity sha1-3NNDMLVYWWpIQTdHQwcbf6BB3Ok=
+  dependencies:
+    cross-spawn "^7.0.0"
+    lodash "^4.17.15"
+    webpack-merge "^4.2.2"
+
+"@craco/craco@^6.2.0":
   version "6.2.0"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@craco/craco/-/craco-6.2.0.tgz#93847ae20899f5e810359443f2055bcf2b1a584e"
   integrity sha1-k4R64giZ9egQNZRD8gVbzysaWE4=
@@ -1229,10 +1247,10 @@
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@csstools/normalize.css/-/normalize.css-10.1.0.tgz#f0950bba18819512d42f7197e56c518aa491cf18"
   integrity sha1-8JULuhiBlRLUL3GX5WxRiqSRzxg=
 
-"@eslint/eslintrc@^0.4.2":
-  version "0.4.2"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@eslint/eslintrc/-/eslintrc-0.4.2.tgz#f63d0ef06f5c0c57d76c4ab5f63d3835c51b0179"
-  integrity sha1-9j0O8G9cDFfXbEq19j04NcUbAXk=
+"@eslint/eslintrc@^0.4.3":
+  version "0.4.3"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@eslint/eslintrc/-/eslintrc-0.4.3.tgz#9e42981ef035beb3dd49add17acb96e8ff6f394c"
+  integrity sha1-nkKYHvA1vrPdSa3ResuW6P9vOUw=
   dependencies:
     ajv "^6.12.4"
     debug "^4.1.1"
@@ -1706,7 +1724,7 @@
   dependencies:
     mini-svg-data-uri "^1.2.3"
 
-"@tailwindcss/postcss7-compat@npm:@tailwindcss/postcss7-compat@^2.1.2", "tailwindcss@npm:@tailwindcss/postcss7-compat@^2.1.2":
+"@tailwindcss/postcss7-compat@npm:@tailwindcss/postcss7-compat@^2.1.2", "tailwindcss@npm:@tailwindcss/postcss7-compat@^2.2.4":
   version "2.2.4"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@tailwindcss/postcss7-compat/-/postcss7-compat-2.2.4.tgz#0e5b446e94cfdf892e4f76cecb703c8d698050f3"
   integrity sha1-DltEbpTP34kuT3bOy3A8jWmAUPM=
@@ -1820,7 +1838,7 @@
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@types/aria-query/-/aria-query-4.2.2.tgz#ed4e0ad92306a704f9fb132a0cfcf77486dbe2bc"
   integrity sha1-7U4K2SMGpwT5+xMqDPz3dIbb4rw=
 
-"@types/babel__core@^7.0.0", "@types/babel__core@^7.1.7":
+"@types/babel__core@^7.0.0", "@types/babel__core@^7.1.3", "@types/babel__core@^7.1.7":
   version "7.1.15"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@types/babel__core/-/babel__core-7.1.15.tgz#2ccfb1ad55a02c83f8e0ad327cbc332f55eb1024"
   integrity sha1-LM+xrVWgLIP44K0yfLwzL1XrECQ=
@@ -1869,9 +1887,9 @@
     "@types/node" "*"
 
 "@types/eslint@^7.2.6":
-  version "7.2.14"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@types/eslint/-/eslint-7.2.14.tgz#088661518db0c3c23089ab45900b99dd9214b92a"
-  integrity sha1-CIZhUY2ww8IwiatFkAuZ3ZIUuSo=
+  version "7.28.0"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@types/eslint/-/eslint-7.28.0.tgz#7e41f2481d301c68e14f483fe10b017753ce8d5a"
+  integrity sha1-fkHySB0wHGjhT0g/4QsBd1POjVo=
   dependencies:
     "@types/estree" "*"
     "@types/json-schema" "*"
@@ -1968,9 +1986,9 @@
   integrity sha1-EAHMXmo3BLg8I2An538vWOoBD0A=
 
 "@types/node@*":
-  version "16.0.3"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@types/node/-/node-16.0.3.tgz#f99794f182a9ffeaf6a0b589e3d3dc652a623ad5"
-  integrity sha1-+ZeU8YKp/+r2oLWJ49PcZSpiOtU=
+  version "16.3.3"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@types/node/-/node-16.3.3.tgz#0c30adff37bbbc7a50eb9b58fae2a504d0d88038"
+  integrity sha1-DDCt/ze7vHpQ65tY+uKlBNDYgDg=
 
 "@types/node@^12.0.0":
   version "12.20.16"
@@ -2016,6 +2034,13 @@
   version "17.0.9"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@types/react-dom/-/react-dom-17.0.9.tgz#441a981da9d7be117042e1a6fd3dac4b30f55add"
   integrity sha1-RBqYHanXvhFwQuGm/T2sSzD1Wt0=
+  dependencies:
+    "@types/react" "*"
+
+"@types/react-test-renderer@^17.0.1":
+  version "17.0.1"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@types/react-test-renderer/-/react-test-renderer-17.0.1.tgz#3120f7d1c157fba9df0118dae20cb0297ee0e06b"
+  integrity sha1-MSD30cFX+6nfARja4gywKX7g4Gs=
   dependencies:
     "@types/react" "*"
 
@@ -2096,7 +2121,7 @@
     "@types/source-list-map" "*"
     source-map "^0.7.3"
 
-"@types/webpack@^4.41.8":
+"@types/webpack@^4.39.2", "@types/webpack@^4.41.8":
   version "4.41.30"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@types/webpack/-/webpack-4.41.30.tgz#fd3db6d0d41e145a8eeeafcd3c4a7ccde9068ddc"
   integrity sha1-/T220NQeFFqO7q/NPEp8zekGjdw=
@@ -2121,27 +2146,27 @@
     "@types/yargs-parser" "*"
 
 "@typescript-eslint/eslint-plugin@^4.5.0":
-  version "4.28.2"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@typescript-eslint/eslint-plugin/-/eslint-plugin-4.28.2.tgz#7a8320f00141666813d0ae43b49ee8244f7cf92a"
-  integrity sha1-eoMg8AFBZmgT0K5DtJ7oJE98+So=
+  version "4.28.3"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@typescript-eslint/eslint-plugin/-/eslint-plugin-4.28.3.tgz#36cdcd9ca6f9e5cb49b9f61b970b1976708d084b"
+  integrity sha1-Ns3NnKb55ctJufYblwsZdnCNCEs=
   dependencies:
-    "@typescript-eslint/experimental-utils" "4.28.2"
-    "@typescript-eslint/scope-manager" "4.28.2"
+    "@typescript-eslint/experimental-utils" "4.28.3"
+    "@typescript-eslint/scope-manager" "4.28.3"
     debug "^4.3.1"
     functional-red-black-tree "^1.0.1"
     regexpp "^3.1.0"
     semver "^7.3.5"
     tsutils "^3.21.0"
 
-"@typescript-eslint/experimental-utils@4.28.2", "@typescript-eslint/experimental-utils@^4.0.1":
-  version "4.28.2"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@typescript-eslint/experimental-utils/-/experimental-utils-4.28.2.tgz#4ebdec06a10888e9326e1d51d81ad52a361bd0b0"
-  integrity sha1-Tr3sBqEIiOkybh1R2BrVKjYb0LA=
+"@typescript-eslint/experimental-utils@4.28.3", "@typescript-eslint/experimental-utils@^4.0.1":
+  version "4.28.3"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@typescript-eslint/experimental-utils/-/experimental-utils-4.28.3.tgz#976f8c1191b37105fd06658ed57ddfee4be361ca"
+  integrity sha1-l2+MEZGzcQX9BmWO1X3f7kvjYco=
   dependencies:
     "@types/json-schema" "^7.0.7"
-    "@typescript-eslint/scope-manager" "4.28.2"
-    "@typescript-eslint/types" "4.28.2"
-    "@typescript-eslint/typescript-estree" "4.28.2"
+    "@typescript-eslint/scope-manager" "4.28.3"
+    "@typescript-eslint/types" "4.28.3"
+    "@typescript-eslint/typescript-estree" "4.28.3"
     eslint-scope "^5.1.1"
     eslint-utils "^3.0.0"
 
@@ -2157,32 +2182,32 @@
     eslint-utils "^2.0.0"
 
 "@typescript-eslint/parser@^4.5.0":
-  version "4.28.2"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@typescript-eslint/parser/-/parser-4.28.2.tgz#6aff11bf4b91eb67ca7517962eede951e9e2a15d"
-  integrity sha1-av8Rv0uR62fKdReWLu3pUenioV0=
+  version "4.28.3"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@typescript-eslint/parser/-/parser-4.28.3.tgz#95f1d475c08268edffdcb2779993c488b6434b44"
+  integrity sha1-lfHUdcCCaO3/3LJ3mZPEiLZDS0Q=
   dependencies:
-    "@typescript-eslint/scope-manager" "4.28.2"
-    "@typescript-eslint/types" "4.28.2"
-    "@typescript-eslint/typescript-estree" "4.28.2"
+    "@typescript-eslint/scope-manager" "4.28.3"
+    "@typescript-eslint/types" "4.28.3"
+    "@typescript-eslint/typescript-estree" "4.28.3"
     debug "^4.3.1"
 
-"@typescript-eslint/scope-manager@4.28.2":
-  version "4.28.2"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@typescript-eslint/scope-manager/-/scope-manager-4.28.2.tgz#451dce90303a3ce283750111495d34c9c204e510"
-  integrity sha1-RR3OkDA6POKDdQERSV00ycIE5RA=
+"@typescript-eslint/scope-manager@4.28.3":
+  version "4.28.3"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@typescript-eslint/scope-manager/-/scope-manager-4.28.3.tgz#c32ad4491b3726db1ba34030b59ea922c214e371"
+  integrity sha1-wyrUSRs3Jtsbo0AwtZ6pIsIU43E=
   dependencies:
-    "@typescript-eslint/types" "4.28.2"
-    "@typescript-eslint/visitor-keys" "4.28.2"
+    "@typescript-eslint/types" "4.28.3"
+    "@typescript-eslint/visitor-keys" "4.28.3"
 
 "@typescript-eslint/types@3.10.1":
   version "3.10.1"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@typescript-eslint/types/-/types-3.10.1.tgz#1d7463fa7c32d8a23ab508a803ca2fe26e758727"
   integrity sha1-HXRj+nwy2KI6tQioA8ov4m51hyc=
 
-"@typescript-eslint/types@4.28.2":
-  version "4.28.2"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@typescript-eslint/types/-/types-4.28.2.tgz#e6b9e234e0e9a66c4d25bab881661e91478223b5"
-  integrity sha1-5rniNODppmxNJbq4gWYekUeCI7U=
+"@typescript-eslint/types@4.28.3":
+  version "4.28.3"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@typescript-eslint/types/-/types-4.28.3.tgz#8fffd436a3bada422c2c1da56060a0566a9506c7"
+  integrity sha1-j//UNqO62kIsLB2lYGCgVmqVBsc=
 
 "@typescript-eslint/typescript-estree@3.10.1":
   version "3.10.1"
@@ -2198,13 +2223,13 @@
     semver "^7.3.2"
     tsutils "^3.17.1"
 
-"@typescript-eslint/typescript-estree@4.28.2":
-  version "4.28.2"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@typescript-eslint/typescript-estree/-/typescript-estree-4.28.2.tgz#680129b2a285289a15e7c6108c84739adf3a798c"
-  integrity sha1-aAEpsqKFKJoV58YQjIRzmt86eYw=
+"@typescript-eslint/typescript-estree@4.28.3":
+  version "4.28.3"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@typescript-eslint/typescript-estree/-/typescript-estree-4.28.3.tgz#253d7088100b2a38aefe3c8dd7bd1f8232ec46fb"
+  integrity sha1-JT1wiBALKjiu/jyN170fgjLsRvs=
   dependencies:
-    "@typescript-eslint/types" "4.28.2"
-    "@typescript-eslint/visitor-keys" "4.28.2"
+    "@typescript-eslint/types" "4.28.3"
+    "@typescript-eslint/visitor-keys" "4.28.3"
     debug "^4.3.1"
     globby "^11.0.3"
     is-glob "^4.0.1"
@@ -2218,12 +2243,12 @@
   dependencies:
     eslint-visitor-keys "^1.1.0"
 
-"@typescript-eslint/visitor-keys@4.28.2":
-  version "4.28.2"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@typescript-eslint/visitor-keys/-/visitor-keys-4.28.2.tgz#bf56a400857bb68b59b311e6d0a5fbef5c3b5130"
-  integrity sha1-v1akAIV7totZsxHm0KX771w7UTA=
+"@typescript-eslint/visitor-keys@4.28.3":
+  version "4.28.3"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@typescript-eslint/visitor-keys/-/visitor-keys-4.28.3.tgz#26ac91e84b23529968361045829da80a4e5251c4"
+  integrity sha1-JqyR6EsjUploNhBFgp2oCk5SUcQ=
   dependencies:
-    "@typescript-eslint/types" "4.28.2"
+    "@typescript-eslint/types" "4.28.3"
     eslint-visitor-keys "^2.0.0"
 
 "@webassemblyjs/ast@1.9.0":
@@ -2408,9 +2433,9 @@ acorn-globals@^6.0.0:
     acorn-walk "^7.1.1"
 
 acorn-jsx@^5.3.1:
-  version "5.3.1"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/acorn-jsx/-/acorn-jsx-5.3.1.tgz#fc8661e11b7ac1539c47dbfea2e72b3af34d267b"
-  integrity sha1-/IZh4Rt6wVOcR9v+oucrOvNNJns=
+  version "5.3.2"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/acorn-jsx/-/acorn-jsx-5.3.2.tgz#7ed5bb55908b3b2f1bc55c6af1653bada7f07937"
+  integrity sha1-ftW7VZCLOy8bxVxq8WU7rafweTc=
 
 acorn-node@^1.6.1:
   version "1.8.2"
@@ -2490,9 +2515,9 @@ ajv@^6.1.0, ajv@^6.10.0, ajv@^6.10.2, ajv@^6.12.4, ajv@^6.12.5:
     uri-js "^4.2.2"
 
 ajv@^8.0.1:
-  version "8.6.1"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/ajv/-/ajv-8.6.1.tgz#ae65764bf1edde8cd861281cda5057852364a295"
-  integrity sha1-rmV2S/Ht3ozYYSgc2lBXhSNkopU=
+  version "8.6.2"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/ajv/-/ajv-8.6.2.tgz#2fb45e0e5fcbc0813326c1c3da535d1881bb0571"
+  integrity sha1-L7ReDl/LwIEzJsHD2lNdGIG7BXE=
   dependencies:
     fast-deep-equal "^3.1.1"
     json-schema-traverse "^1.0.0"
@@ -2779,9 +2804,9 @@ autoprefixer@^9, autoprefixer@^9.6.1, autoprefixer@^9.8.6:
     postcss-value-parser "^4.1.0"
 
 axe-core@^4.0.2:
-  version "4.2.3"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/axe-core/-/axe-core-4.2.3.tgz#2a3afc332f0031b42f602f4a3de03c211ca98f72"
-  integrity sha1-Kjr8My8AMbQvYC9KPeA8IRypj3I=
+  version "4.3.1"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/axe-core/-/axe-core-4.3.1.tgz#0c6a076e4a1c3e0544ba6a9479158f9be7a7928e"
+  integrity sha1-DGoHbkocPgVEumqUeRWPm+enko4=
 
 axobject-query@^2.2.0:
   version "2.2.0"
@@ -3410,9 +3435,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000981, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001125, caniuse-lite@^1.0.30001219:
-  version "1.0.30001243"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/caniuse-lite/-/caniuse-lite-1.0.30001243.tgz#d9250155c91e872186671c523f3ae50cfc94a3aa"
-  integrity sha1-2SUBVckehyGGZxxSPzrlDPyUo6o=
+  version "1.0.30001245"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/caniuse-lite/-/caniuse-lite-1.0.30001245.tgz#45b941bbd833cb0fa53861ff2bae746b3c6ca5d4"
+  integrity sha1-RblBu9gzyw+lOGH/K650azxspdQ=
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -3612,7 +3637,7 @@ collection-visit@^1.0.0:
     map-visit "^1.0.0"
     object-visit "^1.0.0"
 
-color-convert@^1.9.0, color-convert@^1.9.1:
+color-convert@^1.9.0, color-convert@^1.9.3:
   version "1.9.3"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/color-convert/-/color-convert-1.9.3.tgz#bb71850690e1f136567de629d2d5471deda4c1e8"
   integrity sha1-u3GFBpDh8TZWfeYp0tVHHe2kweg=
@@ -3636,21 +3661,21 @@ color-name@^1.0.0, color-name@~1.1.4:
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha1-wqCah6y95pVD3m9j+jmVyCbFNqI=
 
-color-string@^1.5.4:
-  version "1.5.5"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/color-string/-/color-string-1.5.5.tgz#65474a8f0e7439625f3d27a6a19d89fc45223014"
-  integrity sha1-ZUdKjw50OWJfPSemoZ2J/EUiMBQ=
+color-string@^1.6.0:
+  version "1.6.0"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/color-string/-/color-string-1.6.0.tgz#c3915f61fe267672cb7e1e064c9d692219f6c312"
+  integrity sha1-w5FfYf4mdnLLfh4GTJ1pIhn2wxI=
   dependencies:
     color-name "^1.0.0"
     simple-swizzle "^0.2.2"
 
 color@^3.0.0, color@^3.1.3:
-  version "3.1.3"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/color/-/color-3.1.3.tgz#ca67fb4e7b97d611dcde39eceed422067d91596e"
-  integrity sha1-ymf7TnuX1hHc3jns7tQiBn2RWW4=
+  version "3.2.1"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/color/-/color-3.2.1.tgz#3544dc198caf4490c3ecc9a790b54fe9ff45e164"
+  integrity sha1-NUTcGYyvRJDD7MmnkLVP6f9F4WQ=
   dependencies:
-    color-convert "^1.9.1"
-    color-string "^1.5.4"
+    color-convert "^1.9.3"
+    color-string "^1.6.0"
 
 colorette@^1.2.1, colorette@^1.2.2:
   version "1.2.2"
@@ -3885,6 +3910,17 @@ cosmiconfig@^7.0.0:
     parse-json "^5.0.0"
     path-type "^4.0.0"
     yaml "^1.10.0"
+
+craco@^0.0.3:
+  version "0.0.3"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/craco/-/craco-0.0.3.tgz#1e464b0ae5d9176570382d3a3fcdbf3599577012"
+  integrity sha1-HkZLCuXZF2VwOC06P82/NZlXcBI=
+  dependencies:
+    "@babel/core" "^7.6.0"
+    "@craco/craco" "^5.5.0"
+    "@types/babel__core" "^7.1.3"
+    "@types/webpack" "^4.39.2"
+    webpack "^4.41.0"
 
 create-ecdh@^4.0.0:
   version "4.0.4"
@@ -4638,9 +4674,9 @@ ejs@^2.6.1:
   integrity sha1-SGYSh1c9zFPjZsehrlLDoSDuybo=
 
 electron-to-chromium@^1.3.564, electron-to-chromium@^1.3.723:
-  version "1.3.771"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/electron-to-chromium/-/electron-to-chromium-1.3.771.tgz#c4aa601e6420e11926095f75fe803956a1b4bd81"
-  integrity sha1-xKpgHmQg4RkmCV91/oA5VqG0vYE=
+  version "1.3.779"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/electron-to-chromium/-/electron-to-chromium-1.3.779.tgz#de55492a756deec63424f89fbe62aec9776f0e6d"
+  integrity sha1-3lVJKnVt7sY0JPifvmKuyXdvDm0=
 
 elliptic@^6.5.3:
   version "6.5.4"
@@ -4697,7 +4733,7 @@ end-of-stream@^1.0.0, end-of-stream@^1.1.0:
   dependencies:
     once "^1.4.0"
 
-enhanced-resolve@^4.3.0:
+enhanced-resolve@^4.3.0, enhanced-resolve@^4.5.0:
   version "4.5.0"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/enhanced-resolve/-/enhanced-resolve-4.5.0.tgz#2f3cfd84dbe3b487f18f2db2ef1e064a571ca5ec"
   integrity sha1-Lzz9hNvjtIfxjy2y7x4GSlccpew=
@@ -4997,12 +5033,12 @@ eslint-webpack-plugin@^2.5.2:
     schema-utils "^3.0.0"
 
 eslint@^7.11.0:
-  version "7.30.0"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/eslint/-/eslint-7.30.0.tgz#6d34ab51aaa56112fd97166226c9a97f505474f8"
-  integrity sha1-bTSrUaqlYRL9lxZiJsmpf1BUdPg=
+  version "7.31.0"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/eslint/-/eslint-7.31.0.tgz#f972b539424bf2604907a970860732c5d99d3aca"
+  integrity sha1-+XK1OUJL8mBJB6lwhgcyxdmdOso=
   dependencies:
     "@babel/code-frame" "7.12.11"
-    "@eslint/eslintrc" "^0.4.2"
+    "@eslint/eslintrc" "^0.4.3"
     "@humanwhocodes/config-array" "^0.5.0"
     ajv "^6.10.0"
     chalk "^4.0.0"
@@ -6363,9 +6399,9 @@ is-color-stop@^1.0.0:
     rgba-regex "^1.0.0"
 
 is-core-module@^2.0.0, is-core-module@^2.2.0, is-core-module@^2.4.0:
-  version "2.4.0"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/is-core-module/-/is-core-module-2.4.0.tgz#8e9fc8e15027b011418026e98f0e6f4d86305cc1"
-  integrity sha1-jp/I4VAnsBFBgCbpjw5vTYYwXME=
+  version "2.5.0"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/is-core-module/-/is-core-module-2.5.0.tgz#f754843617c70bfd29b7bd87327400cda5c18491"
+  integrity sha1-91SENhfHC/0pt72HMnQAzaXBhJE=
   dependencies:
     has "^1.0.3"
 
@@ -7929,11 +7965,6 @@ nan@^2.12.1:
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/nan/-/nan-2.14.2.tgz#f5376400695168f4cc694ac9393d0c9585eeea19"
   integrity sha1-9TdkAGlRaPTMaUrJOT0MlYXu6hk=
 
-nanoid@^2.1.0:
-  version "2.1.11"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/nanoid/-/nanoid-2.1.11.tgz#ec24b8a758d591561531b4176a01e3ab4f0f0280"
-  integrity sha1-7CS4p1jVkVYVMbQXagHjq08PAoA=
-
 nanoid@^3.1.23:
   version "3.1.23"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/nanoid/-/nanoid-3.1.23.tgz#f744086ce7c2bc47ee0a8472574d5c78e4183a81"
@@ -8065,9 +8096,9 @@ node-releases@^1.1.61, node-releases@^1.1.71:
   integrity sha1-3U6B3dUnf/hGuAtSu0DEnt96eyA=
 
 nodemon@^2.0.10:
-  version "2.0.10"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/nodemon/-/nodemon-2.0.10.tgz#abda912860e5c1158ce0e1f13e0fe43b36b0ccb3"
-  integrity sha1-q9qRKGDlwRWM4OHxPg/kOzawzLM=
+  version "2.0.12"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/nodemon/-/nodemon-2.0.12.tgz#5dae4e162b617b91f1873b3bfea215dd71e144d5"
+  integrity sha1-Xa5OFithe5Hxhzs7/qIV3XHhRNU=
   dependencies:
     chokidar "^3.2.2"
     debug "^3.2.6"
@@ -8192,9 +8223,9 @@ object-hash@^2.2.0:
   integrity sha1-WtUYWB7vxEO9djRyuP8unCwNVKU=
 
 object-inspect@^1.10.3, object-inspect@^1.9.0:
-  version "1.10.3"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/object-inspect/-/object-inspect-1.10.3.tgz#c2aa7d2d09f50c99375704f7a0adf24c5782d369"
-  integrity sha1-wqp9LQn1DJk3VwT3oK3yTFeC02k=
+  version "1.11.0"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/object-inspect/-/object-inspect-1.11.0.tgz#9dceb146cedd4148a0d9e51ab88d34cf509922b1"
+  integrity sha1-nc6xRs7dQUig2eUauI00z1CZIrE=
 
 object-is@^1.0.1:
   version "1.1.5"
@@ -9765,15 +9796,15 @@ react-icons@^4.2.0:
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/react-icons/-/react-icons-4.2.0.tgz#6dda80c8a8f338ff96a1851424d63083282630d0"
   integrity sha1-bdqAyKjzOP+WoYUUJNYwgygmMNA=
 
+"react-is@^16.12.0 || ^17.0.0", react-is@^17.0.1, react-is@^17.0.2:
+  version "17.0.2"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
+  integrity sha1-5pHUqOnHiTZWVVOas3J2Kw77VPA=
+
 react-is@^16.8.1:
   version "16.13.1"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha1-eJcppNw23imZ3BVt1sHZwYzqVqQ=
-
-react-is@^17.0.1:
-  version "17.0.2"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
-  integrity sha1-5pHUqOnHiTZWVVOas3J2Kw77VPA=
 
 react-refresh@^0.8.3:
   version "0.8.3"
@@ -9845,6 +9876,24 @@ react-scripts@4.0.3:
     workbox-webpack-plugin "5.1.4"
   optionalDependencies:
     fsevents "^2.1.3"
+
+react-shallow-renderer@^16.13.1:
+  version "16.14.1"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/react-shallow-renderer/-/react-shallow-renderer-16.14.1.tgz#bf0d02df8a519a558fd9b8215442efa5c840e124"
+  integrity sha1-vw0C34pRmlWP2bghVELvpchA4SQ=
+  dependencies:
+    object-assign "^4.1.1"
+    react-is "^16.12.0 || ^17.0.0"
+
+react-test-renderer@^17.0.2:
+  version "17.0.2"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/react-test-renderer/-/react-test-renderer-17.0.2.tgz#4cd4ae5ef1ad5670fc0ef776e8cc7e1231d9866c"
+  integrity sha1-TNSuXvGtVnD8Dvd26Mx+EjHZhmw=
+  dependencies:
+    object-assign "^4.1.1"
+    react-is "^17.0.2"
+    react-shallow-renderer "^16.13.1"
+    scheduler "^0.20.2"
 
 react@^17.0.2:
   version "17.0.2"
@@ -10568,13 +10617,6 @@ shellwords@^0.1.1:
   version "0.1.1"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/shellwords/-/shellwords-0.1.1.tgz#d6b9181c1a48d397324c84871efbcfc73fc0654b"
   integrity sha1-1rkYHBpI05cyTISHHvvPxz/AZUs=
-
-shortid@^2.2.16:
-  version "2.2.16"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/shortid/-/shortid-2.2.16.tgz#b742b8f0cb96406fd391c76bfc18a67a57fe5608"
-  integrity sha1-t0K48MuWQG/Tkcdr/Bimelf+Vgg=
-  dependencies:
-    nanoid "^2.1.0"
 
 side-channel@^1.0.4:
   version "1.0.4"
@@ -11354,9 +11396,9 @@ tryer@^1.0.1:
   integrity sha1-8shUBoALmw90yfdGW4HqrSQSUvg=
 
 ts-node@^10.0.0:
-  version "10.0.0"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/ts-node/-/ts-node-10.0.0.tgz#05f10b9a716b0b624129ad44f0ea05dac84ba3be"
-  integrity sha1-BfELmnFrC2JBKa1E8OoF2shLo74=
+  version "10.1.0"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/ts-node/-/ts-node-10.1.0.tgz#e656d8ad3b61106938a867f69c39a8ba6efc966e"
+  integrity sha1-5lbYrTthEGk4qGf2nDmoum78lm4=
   dependencies:
     "@tsconfig/node10" "^1.0.7"
     "@tsconfig/node12" "^1.0.7"
@@ -11940,6 +11982,35 @@ webpack@4.44.2:
     watchpack "^1.7.4"
     webpack-sources "^1.4.1"
 
+webpack@^4.41.0:
+  version "4.46.0"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/webpack/-/webpack-4.46.0.tgz#bf9b4404ea20a073605e0a011d188d77cb6ad542"
+  integrity sha1-v5tEBOogoHNgXgoBHRiNd8tq1UI=
+  dependencies:
+    "@webassemblyjs/ast" "1.9.0"
+    "@webassemblyjs/helper-module-context" "1.9.0"
+    "@webassemblyjs/wasm-edit" "1.9.0"
+    "@webassemblyjs/wasm-parser" "1.9.0"
+    acorn "^6.4.1"
+    ajv "^6.10.2"
+    ajv-keywords "^3.4.1"
+    chrome-trace-event "^1.0.2"
+    enhanced-resolve "^4.5.0"
+    eslint-scope "^4.0.3"
+    json-parse-better-errors "^1.0.2"
+    loader-runner "^2.4.0"
+    loader-utils "^1.2.3"
+    memory-fs "^0.4.1"
+    micromatch "^3.1.10"
+    mkdirp "^0.5.3"
+    neo-async "^2.6.1"
+    node-libs-browser "^2.2.1"
+    schema-utils "^1.0.0"
+    tapable "^1.1.3"
+    terser-webpack-plugin "^1.4.3"
+    watchpack "^1.7.4"
+    webpack-sources "^1.4.1"
+
 websocket-driver@>=0.5.1, websocket-driver@^0.7.4:
   version "0.7.4"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/websocket-driver/-/websocket-driver-0.7.4.tgz#89ad5295bbf64b480abcba31e4953aca706f5760"
@@ -12230,9 +12301,9 @@ ws@^6.2.1:
     async-limiter "~1.0.0"
 
 ws@^7.4.5:
-  version "7.5.2"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/ws/-/ws-7.5.2.tgz#09cc8fea3bec1bc5ed44ef51b42f945be36900f6"
-  integrity sha1-CcyP6jvsG8XtRO9RtC+UW+NpAPY=
+  version "7.5.3"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/ws/-/ws-7.5.3.tgz#160835b63c7d97bfab418fc1b8a9fced2ac01a74"
+  integrity sha1-Fgg1tjx9l7+rQY/BuKn87SrAGnQ=
 
 xdg-basedir@^4.0.0:
   version "4.0.0"
