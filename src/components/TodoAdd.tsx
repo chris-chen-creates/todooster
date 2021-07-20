@@ -1,7 +1,11 @@
-import { TodoFormProps, TodoProps } from '../interface'
+import { TodoProps } from '../App'
 import { BsPlusSquareFill } from 'react-icons/bs'
 import React, { FormEvent, useState } from 'react'
-import { v4 as uuidv4 } from 'uuid'
+
+interface TodoFormProps {
+  tasks?: TodoProps[]
+  handleTaskCreate: (task: string) => void
+}
 
 const TodoAdd = (formProps: TodoFormProps) => {
   const input = React.useRef<HTMLInputElement>(null)

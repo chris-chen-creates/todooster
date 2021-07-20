@@ -1,5 +1,11 @@
-import { TodoListProps } from '../interface';
-import Todo from './Todo';
+import { TodoProps } from '../App'
+import Todo from './Todo'
+
+interface TodoListProps {
+  handleTaskDelete: (todos: TodoProps[]) => void
+  handleTaskComplete: (id: string) => void
+  todos: TodoProps[]
+}
 
 const TodoList = (props: TodoListProps) => {
   return (
@@ -22,6 +28,6 @@ const TodoList = (props: TodoListProps) => {
         Delete Completed
       </button>
     </div>
-  );
-};
-export default TodoList;
+  )
+}
+export default TodoList

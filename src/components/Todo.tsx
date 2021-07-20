@@ -1,5 +1,11 @@
-import { TodoTaskProps } from '../interface'
+import { TodoProps } from '../App'
 import { MdRadioButtonUnchecked, MdRadioButtonChecked } from 'react-icons/md'
+
+interface TodoTaskProps {
+  handleTaskDelete: (todos: TodoProps[]) => void
+  handleTaskComplete: (id: string) => void
+  todo: TodoProps
+}
 
 const taskChecked = (
   <MdRadioButtonChecked
