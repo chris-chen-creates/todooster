@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import './index.css';
-import { FaCheckCircle, FaLevelUpAlt } from 'react-icons/fa';
+import { FaCheckCircle } from 'react-icons/fa';
 import TodoList from './components/TodoList';
 import { TodoProps } from './interface';
 import TodoAdd from './components/TodoAdd';
