@@ -35,12 +35,15 @@ gh repo clone chris-chen-creates/todooster
 ```
 npm install
 ```
+3. Lastly you'll want to get run the database migrations. For this I used mySQL, but any relational database should do the trick. I'm using Goose to handle these migrations so you can find some more information [here](https://github.com/pressly/goose). Here's an example command to run the migrations on a MySQL database:
+```
+goose mysql "user:password@/dbname?parseTime=true" up 
+```
 
 # Running the app
 1. Start by navigating to the `/todooster` folder
 2. In the command line, run either `npm start` or `yarn start` (if you're a yarn user)
 3. *login/registration steps will go here when ready*
-4. 
 
 
 # Design Notes :chicken:
@@ -87,4 +90,5 @@ Deleting tasks will add a timestamp to the deleted field on the associated task 
 
 ### ERD
 ![Imgur](https://i.imgur.com/5Xpi8hu.png)
-![Imgur](https://i.imgur.com/Ah30sap.png)
+![Imgur](https://i.imgur.com/uwCgnVv.png)
+![Imgur](https://i.imgur.com/KskpYDg.png)
